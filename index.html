@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomeExchange</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/main.css" />
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+</head>
+<body>
+	<div class="w1">
+		<div class="loc">
+		
+			<img src="slike/location.png"><a href="#map">New York</a>
+	
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Rent</a></li>
+				<li><a href="#">Buy</a></li>
+				<li><a href="#">Sell</a></li>
+				<li><a href="#">Messages</a></li>
+			</ul>
+		</nav>
+	</div>
+	<main>
+		<section class="sec1">
+			<div class="naslovi">
+				<div class="okvir">
+					<h1>
+						Welcome to HomeExchange
+					</h1>
+					<h4>
+						Your fastest way to find or sell home online.
+					</h4>
+				</div>
+			</div>
+		</section>
+		<section class="sec2">
+			<div class="dugmici">
+				<input type="submit" value="$1,200-84,000"/> 
+				<input type="submit" value="1+Bedroom"/>
+				<input type="submit" value="Garage"/>
+			</div>
+		</section>
+		<section class="sec3">
+			<div class="colContainer">
+				<div class="col3"><img src="slike/1.jpg"></div>
+				<div class="col3"><img src="slike/2.jpg"></div>
+				<div class="col3"><img src="slike/3.jpg"></div>
+				<div class="col3"><img src="slike/4.jpg"></div>
+				<div class="col3"><img src="slike/5.jpg"></div>
+				<div class="col3"><img src="slike/6.jpg"></div>
+				<div class="col3"></div>
+				<div class="col3"></div>
+			</div>	
+		</section>
+		<section class="sec4">
+			<h1>
+				PRICING
+			</h1>
+			<h4>
+				Our service prices in New York
+			</h4>
+			<div class="checkButton"><input type="submit" value="Check the prices"/></div>
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<th colspan="2" class="th1">Price</th>
+					
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<th class="th2">Rent/Buy</th>
+					<th class="th2">Sell</th>
+				</tr>
+				<tr>
+					<th rowspan="3" class="th1">Location</th>
+					<th class="th2">Downtown</th>
+					<td class="tdb">3$</td>
+					<td class="tdb">3$</td>
+				</tr>
+				<tr>
+					<th class="th2">Center</th>
+					<td class="tdb">3$</td>
+					<td class="tdb">3$</td>
+				</tr>		
+				<tr>
+					<th class="th2">Manhattan</th>
+					<td class="tdb">3$</td>
+					<td class="tdb">3$</td>
+				</tr>					
+			</table>
+			
+		</section>
+		<section class="sec5">
+			<h1>
+				CONTACT US
+			</h1>		
+			<div class="colContainer1">
+				
+				<div id="map">
+					<!--<img src="slike/house.png">-->
+					
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:400px;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div><div><small><a href="https://top10geeks.com/top-10-best-bluetooth-speakers-2016/">Top 10 Bluetooth speakers of 2016</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(40.7127837,-74.00594130000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.7127837,-74.00594130000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Times Square</strong><br>New York<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+				</div>
+
+				<form action="#" method="post" class="contactForm">
+					<input type="text" name="contact_title" class="contactinput" placeholder="Title" list="title" size="10" maxlength="10" >
+					<input type="text" name="contact_name" class="contactinput" placeholder="Your name" size="25" maxlength="25">
+					<input type="text" name="contact_email" class="contactinput" placeholder="Your email" size="40" maxlength="40">
+					<textarea name="contact_message" placeholder="Your message" size="40" maxlength="40"></textarea>
+
+					
+					<datalist id="title">
+						<option value="Mr"/>
+						<option value="Ms"/>	
+						<option value="Mrs"/>	
+						<option value="Miss"/>
+					</datalist>
+					
+				</form>
+
+			</div>	
+		</section>		
+	</main>
+	<footer>Copyright &copy; 2016 <a href="#">HomeExcange</a></footer>
+</body>
+</html>
+
