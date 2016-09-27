@@ -15,7 +15,8 @@ section {
 
 .w1 {
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  height: 3em; }
   .w1:before, .w1:after {
     content: "";
     display: block; }
@@ -24,17 +25,27 @@ section {
   .w1 .loc {
     float: left;
     width: 20%;
-    height: auto;
+    /*height: auto;*/
     text-align: left;
     background: #f75311;
-    padding: 1em; }
+    padding-bottom: 2em; }
     .w1 .loc img {
+      /*border: 1px solid black;*/
       float: left;
-      width: 10%; }
-    .w1 .loc a {
-      color: #ddd; }
-      .w1 .loc a:hover {
-        color: #cfd1d3; }
+      max-width: 30px;
+      height: auto;
+      width: auto;
+      max-height: 30px;
+      padding-top: 0.1em; }
+    .w1 .loc .town {
+      padding-top: 0.8em;
+      /*border: 1px solid black;*/
+      float: left;
+      height: auto; }
+      .w1 .loc .town a {
+        color: #ddd; }
+        .w1 .loc .town a:hover {
+          color: #cfd1d3; }
   .w1 nav {
     float: right;
     width: 80%;
@@ -56,6 +67,7 @@ section {
 
 .sec1 {
   background-image: url("../slike/intro.jpg");
+  background-size: cover;
   height: 30em;
   position: relative;
   margin-bottom: 1em; }
@@ -252,7 +264,8 @@ footer {
 @media only screen and (max-width: 768px) {
   .w1 {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .w1 .loc {
       width: 100%;
       height: auto;
@@ -265,6 +278,31 @@ footer {
       .w1 nav ul li {
         display: block;
         padding: 0.5em; }
+
+  .loc {
+    float: left;
+    width: 20%;
+    /*height: auto;*/
+    text-align: left;
+    background: #f75311;
+    padding-bottom: 2em; }
+    .loc img {
+      /*border: 1px solid black;*/
+      float: left;
+      max-width: 30px;
+      height: auto;
+      width: auto;
+      max-height: 30px;
+      padding-top: 0.1em; }
+    .loc .town {
+      padding-top: 0.8em;
+      /*border: 1px solid black;*/
+      float: left;
+      height: auto; }
+      .loc .town a {
+        color: #ddd; }
+        .loc .town a:hover {
+          color: #cfd1d3; }
 
   .sec1 {
     background: black;
